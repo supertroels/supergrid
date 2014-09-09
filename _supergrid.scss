@@ -30,6 +30,18 @@ $colpad:			2%;
 	
 }
 
+@mixin offsetcol($col: 1, $offset: 1){
+
+	$colpadtotal: ($colpad) * ($cols - 1);
+	$colwidth: (100%/$cols) - ($colpadtotal/$cols);
+	$offsetwidth: ($colwidth*$offset)+($colpad*($offset - 1));
+
+	@include col($col);
+
+	margin-left: $offsetwidth;
+
+}
+
 @mixin lastcol($col: 1){
 	@include col($col);
 	margin-right: 0;

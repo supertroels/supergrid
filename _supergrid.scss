@@ -12,7 +12,6 @@ $colpad:			2%;
 @mixin container($container_width: 60em) {
 	width: $container_width;
 	margin: 0px auto;
-	background-color: red;
 	@include __clearfix();
 }
 

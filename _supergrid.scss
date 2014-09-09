@@ -26,7 +26,6 @@ $colpad:			2%;
 	float: left;
 	width: $thiscolwidth;
 	margin-right: $colpad;
-	background-color: lighten(black, $col*5);
 	@include __clearfix();
 	
 }
